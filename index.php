@@ -21,8 +21,16 @@
     tempora. Nisi harum cum quam hic.
 </p>
 
+<br>
+<hr>
+<br>
+
 <h2>image carousel</h2>
 <p>(images here)</p>
+
+<br>
+<hr>
+<br>
 
 <ul>
     <li><a href="producttoevoegen.html">Add product</a>

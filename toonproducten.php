@@ -4,7 +4,12 @@ try{
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->query("SELECT * FROM producten");
     while ($row = $stmt->fetch()) {
-        echo "<LI>" . $row['naam'] . " : " . $row['prijs'] . "<a href='dbproductverwijderen.php?productid=" . $row['id'] . "'>Remove item</a></LI>";
+        echo "<li>" . $row['naam'] . " : " . $row['prijs'];
+        echo " ";
+        echo "<a href=dbproductverwijderen.php?productid=" . $row['id'] . ">Remove item</a>";
+        echo " ";
+        echo "<a href=productbewerken.php?productid=" . $row['id'] . ">Alter item</a>";
+        echo "</li>";
     }
 }
 catch(PDOException $e) {
