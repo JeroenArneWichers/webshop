@@ -4,7 +4,7 @@ try{
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->query("SELECT * FROM producten");
     while ($row = $stmt->fetch()) {
-        echo "<li>" . $row['naam'] . " : " . $row['prijs']. "</li>";
+        echo "<LI>" . $row['naam'] . " : " . $row['prijs'] . "<a href='dbproductverwijderen.php?productid=" . $row['id'] . "'>Remove item</a></LI>";
     }
 }
 catch(PDOException $e) {

@@ -8,7 +8,7 @@ try
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->prepare("INSERT INTO producten (naam, prijs) VALUES (:fnaam, :fprijs)");
-    
+
     $stmt->execute([
         'fnaam' => $productnaam,
         'fprijs' => $productprijs
@@ -19,4 +19,7 @@ catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
 $conn = NULL;
+
+header("Location: index.php");
+
 ?> 
