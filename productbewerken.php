@@ -12,6 +12,7 @@
         while ($row = $statement->fetch()) {
             $productnaam = $row['naam'];
             $productprijs = $row['prijs'];
+            $productdescription = $row['description'];
         }	
             
     }
@@ -29,6 +30,8 @@
     <input name="productnaam" placeholder="Product naam" value="<?php echo $productnaam ?>">
     <br>
     <input name="productprijs" placeholder="Product prijs" value="<?php echo $productprijs ?>">
+    <br> 
+    <input name="productdescription" placeholder="Product description" value="<?php echo $productdescription ?>">
     <br> 
     <button type="submit">Update</button>
 

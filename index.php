@@ -99,14 +99,16 @@
 </nav>
 
 
-<br>
-<hr>
-<br>
 
-<h2>Products</h2>
+<div class="container-fluid">
+  <div class="row">
+      
 <?php
-  include("toonproducten.php");
+  include("toonproducten2.php");
 ?>
+
+  </div>
+</div>
 
 <br>
 <hr>
