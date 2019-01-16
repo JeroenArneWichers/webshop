@@ -88,7 +88,7 @@
         <a class="nav-link" href="producttoevoegen.html">Add product</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="klanttoevoegen.html">Add product</a>
+        <a class="nav-link" href="klanttoevoegen.html">Register customer</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
