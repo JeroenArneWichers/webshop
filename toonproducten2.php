@@ -12,10 +12,10 @@
   </head>
   <body>
 
-  <form>
-    <input name="naamfilter" placeholder="naam bevat">
-    <input type=submit value="Search">
-</form>
+<!-- <form>
+  <input name="naamfilter" placeholder="naam bevat">
+  <input type=submit value="Search">
+</form> -->
 
 <?php
 if (isset($_GET['naamfilter']))
@@ -38,8 +38,8 @@ else
   while ($row = $stmt->fetch()) 
   {
   ?>
-
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<!-- col-12 col-sm-6 col-md-4  -->
+  <div class="col-lg-2">
     <div class="card" style="width: 18rem;">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
