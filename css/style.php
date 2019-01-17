@@ -1,3 +1,5 @@
+<?php Header ("Content-type: text/css; charset=utf-8");?> 
+<style>
 /* General Section
 --------------------------------*/
 .spacer200 {
@@ -5,8 +7,8 @@
 	margin-bottom: 200px;
 }
 .jumbotron {
-    background-image: url(../img/headerflag.png);
-    background-color: #B60000;
+    background-image: url(<?php echo "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547732288/roman-webshop/headerflag.png"?>);
+    background-color: #B60000 !important;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,3 +23,4 @@
     border-bottom: 6px black solid;
 	/* border-radius: 50px; */
 }
+</style>

@@ -8,6 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+
+
     <title>toonproducten2</title>
   </head>
   <body>
@@ -39,16 +44,16 @@ else
   {
   ?>
 <!-- col-12 col-sm-6 col-md-4  -->
-  <div class="col-lg-2">
+  <div class="col-lg-2 m-4 justify-content-md-center">
     <div class="card" style="width: 18rem;">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"><?php echo $row['naam']?></h5>
         <p class="card-text"><?php echo $row['prijs']?></p>
         <p class="card-text"><?php echo $row['description']?></p>
-        <p class="card-text"><?php echo "<a href=dbproductverwijderen.php?productid=" . $row['id'] . ">Remove item</a>"?></p>
-        <p class="card-text"><?php echo "<a href=productbewerken.php?productid=" . $row['id'] . ">Alter item</a>"?></p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text"><?php echo "<a href=dbproductverwijderen.php?productid=" . $row['id'] . ">Remove item</a>"?><i class="fas fa-ban"></i></p>
+        <p class="card-text"><?php echo "<a href=productbewerken.php?productid=" . $row['id'] . ">Alter item</a>"?><i class="fas fa-edit"></i></p>
+        
       </div>
     </div>
   </div>

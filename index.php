@@ -8,8 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Main Stylesheet File trough PHP -->
+    <link rel="stylesheet" href="css/style.php" media="screen">
+    
+    <!-- Main Stylesheet File -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
 
     <title>main page webshop</title>
   </head>
@@ -37,7 +40,7 @@
       And how can commerce flourish without a nice little place
       where to show of your wares and order products?</p>
 
-    <p>Welcome to the greatest shop sine the time of August!</p>
+    <p>Welcome to the greatest shop since the time of First Citizen Augustus!</p>
     </div>
   </div>
   </div>
@@ -50,13 +53,16 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
     <div class="carousel-inner about-custom-image-size">
       <div class="carousel-item active">
-        <img src="img/car1.jpg" class="mx-auto d-block w-100" alt="...">
+      <?php echo '<img src= "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547730538/roman-webshop/car1.jpg"'?>class="mx-auto d-block w-100" alt="...">
+        <!-- <img src="img/car1.jpg" class="mx-auto d-block w-100" alt="..."> -->
       </div>
       <div class="carousel-item">
-        <img src="img/car2.jpg" class="mx-auto d-block w-100" alt="...">
+        <!-- <img src="img/car2.jpg" class="mx-auto d-block w-100" alt="..."> -->
+        <?php echo '<img src= "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547732169/roman-webshop/car2.jpg"'?>class="mx-auto d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="img/car3.jpg" class="mx-auto d-block w-100" alt="...">
+        <!-- <img src="img/car3.jpg" class="mx-auto d-block w-100" alt="..."> -->
+        <?php echo '<img src= "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547732169/roman-webshop/car3.jpg"'?>class="mx-auto d-block w-100" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -85,23 +91,22 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="producttoevoegen.html">Add product</a>
+        <a class="nav-link" href="producttoevoegen.php">Add product</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="klanttoevoegen.html">Register customer</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input name="naamfilter" class="form-control mr-sm-2" type="search" placeholder="Search filter" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
 
 
-
 <div class="container-fluid">
-  <div class="row">
+  <div class="row justify-content-md-center">
       
 <?php
   include("toonproducten2.php");
