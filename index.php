@@ -29,7 +29,7 @@
   About This site
 ============================-->
 <section id="about">
-  <div class="container spacer200">
+  <div class="container spacertop100 spacerbottom100">
   <div class="row about-container">
     <div class="col-lg-6 content order-lg-1 order-1">
     <h2 class="title">SALVE CIVIS!</h2>
@@ -79,7 +79,7 @@
 <!--==========================
   navbar
 ============================-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -105,7 +105,7 @@
 </nav>
 
 
-<div class="container-fluid">
+<div class="container-fluid spacertop100 spacerbottom100">
   <div class="row justify-content-md-center">
       
 <?php
@@ -115,14 +115,26 @@
   </div>
 </div>
 
-<br>
-<hr>
-<br>
+<section id="quotes">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>"Orders"</h1>
+        </div>
+        </div>
+    </div>
+</section>
 
-<h2>Customers</h2>
-<?php
-  include("toonklanten.php");
-?>
+<div class="container-fluid spacertop100 spacerbottom100">
+  <div class="row justify-content-md-center">
+
+    <?php
+      include("toonbestellingen.php")
+    ?>
+
+  </div>
+</div>
+
 
 
     <!-- Optional JavaScript -->
