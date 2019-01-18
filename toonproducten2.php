@@ -46,7 +46,7 @@ else
 <!-- col-12 col-sm-6 col-md-4  -->
   <div class="col-lg-2 m-4 justify-content-md-center">
     <div class="card" style="width: 18rem;">
-      <img src=<?php echo "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547803535/roman-webshop/milequip.jpg" ?> class="card-img-top" alt="...">
+      <img src=<?php echo "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547815938/roman-webshop/header.jpg" ?> class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"><?php echo $row['naam']?></h5>
         <p class="card-text"><?php echo $row['prijs']?></p>

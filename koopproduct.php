@@ -36,5 +36,5 @@ catch(PDOException $e) {
 }
 	
 $conn = NULL;
-header("Location: index.php");
+header("Location: index.php#showproducts");
 ?> 

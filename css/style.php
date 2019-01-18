@@ -29,12 +29,12 @@
 }
 
 #quotes {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/book-background.jpeg) fixed center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(<?php echo "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547813879/roman-webshop/romanforum.jpg" ?>) fixed center center;
     background-size: cover;
     padding: 50px 0;
     border-bottom: black solid 5px;
     border-top: black solid 5px;
-    color: white;
+    color: black;
   }
 
 .jumbotron {

@@ -98,9 +98,6 @@
       <li class="nav-item">
         <a class="nav-link" href="producttoevoegen.php">Add product</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="klanttoevoegen.html">Register customer</a>
-      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input name="naamfilter" class="form-control mr-sm-2" type="search" placeholder="Search filter" aria-label="Search">
@@ -109,36 +106,39 @@
   </div>
 </nav>
 
+<section id="showproducts">
+  <div class="container-fluid spacertop100 spacerbottom100">
+    <div class="row justify-content-md-center">
+        
+  <?php
+    include("toonproducten2.php");
+  ?>
 
-<div class="container-fluid spacertop100 spacerbottom100">
-  <div class="row justify-content-md-center">
-      
-<?php
-  include("toonproducten2.php");
-?>
-
+    </div>
   </div>
-</div>
+</section>
 
 <section id="quotes">
     <div class="container">
         <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>"Orders"</h1>
+            <h1>Customer orders</h1>
         </div>
         </div>
     </div>
 </section>
 
-<div class="container-fluid spacertop100 spacerbottom100">
-  <div class="row justify-content-md-center m-5">
+<section id="showorders">
+  <div class="container-fluid spacertop100 spacerbottom100">
+    <div class="row justify-content-md-center m-5">
 
-    <?php
-      include("toonbestellingen.php")
-    ?>
+      <?php
+        include("toonbestellingen.php")
+      ?>
 
+    </div>
   </div>
-</div>
+</section>
 
 
 

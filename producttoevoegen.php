@@ -24,6 +24,11 @@
                     <input class="form-control" name="productnaam" placeholder="Product name"><br>
                     <input class="form-control" name="productprijs" placeholder="Product price"><br>
                     <input class="form-control" name="productdescription" placeholder="Product description"><br>
+                    <select class="form-control"name="Product type">
+                        <option value="Default">Default</option>
+                        <option value="Military">Military</option>
+                        <option value="Civilian">Civilian</option>
+                    </select><br>
                     <button class="btn btn-primary" type="submit">Add</button>
                 </div>
             </form>
