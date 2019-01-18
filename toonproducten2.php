@@ -51,10 +51,9 @@ else
         <h5 class="card-title"><?php echo $row['naam']?></h5>
         <p class="card-text"><?php echo $row['prijs']?></p>
         <p class="card-text"><?php echo $row['description']?></p>
-        <p class="card-text"><?php echo "<a href=dbproductverwijderen.php?productid=" . $row['id'] . ">Remove item</a>"?><i class="fas fa-ban"></i></p>
-        <p class="card-text"><?php echo "<a href=productbewerken.php?productid=" . $row['id'] . ">Alter item</a>"?><i class="fas fa-edit"></i></p>
-        <p class="card-text"><?php echo "<a href=koopproduct.php?productid=" . $row['id'] . ">Buy Product</a>"?><i class="fas fa-dollar-sign"></i></p>
-        
+        <a href=<?php echo"dbproductverwijderen.php?productid=" . $row['id']?> class="btn btn-danger"><i class="fas fa-dumpster"></i></a>
+        <a href=<?php echo"productbewerken.php?productid=" . $row['id']?> class="btn btn-danger"><i class="fas fa-edit"></i></a>
+        <a href=<?php echo"koopproduct.php?productid=" . $row['id']?> class="btn btn-danger">Buy Product</a>
       </div>
     </div>
   </div>

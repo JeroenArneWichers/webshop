@@ -1,6 +1,6 @@
 <?php
 $productid = $_GET['productid'];
-$besteller = 'jwichers@Konohad.kh';
+$besteller = 'jwichers@Konoha.kh';
 $tebetalen = 0.00;
 try {
     $conn = new PDO("mysql:host=127.0.0.1;dbname=webshopdb", 'root', '');

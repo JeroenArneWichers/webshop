@@ -7,12 +7,25 @@
 	margin-bottom: 200px;
 }
 
+.spacertop50 {
+    margin-top: 50px;
+}
+
 .spacertop100 {
     margin-top: 100px;
 }
 
 .spacerbottom100 {
     margin-bottom: 100px;
+}
+
+.aboutcustomimage {
+    border-radius: 50%;
+    width: auto;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #quotes {

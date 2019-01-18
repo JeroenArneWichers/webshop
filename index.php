@@ -18,7 +18,7 @@
   </head>
   <body>
 
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid spacertop50">
   <div class="container">
     <h1 class="display-4">Rome's Armory</h1>
     <p class="lead">The premier place for your daily needs.</p>
@@ -42,6 +42,11 @@
 
     <p>Welcome to the greatest shop since the time of First Citizen Augustus!</p>
     </div>
+
+    <div class="col-lg-6 content order-lg-2 order-2">
+    <?php echo '<img class="aboutcustomimage" src= "https://res.cloudinary.com/jeroenarnewicherscdn/image/upload/v1547811529/roman-webshop/augustus.png"'?>
+    </div>
+
   </div>
   </div>
 </section>
@@ -126,7 +131,7 @@
 </section>
 
 <div class="container-fluid spacertop100 spacerbottom100">
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center m-5">
 
     <?php
       include("toonbestellingen.php")
