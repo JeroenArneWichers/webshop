@@ -53,7 +53,7 @@ else
         <p class="card-text"><?php echo $row['description']?></p>
         <p class="card-text"><?php echo "<a href=dbproductverwijderen.php?productid=" . $row['id'] . ">Remove item</a>"?><i class="fas fa-ban"></i></p>
         <p class="card-text"><?php echo "<a href=productbewerken.php?productid=" . $row['id'] . ">Alter item</a>"?><i class="fas fa-edit"></i></p>
-        <p class="card-text"><?php echo "<a href=koopproduct.php?productid=" . $row['id'] . ">Buy Product</a>"?><i class="fas fa-edit"></i></p>
+        <p class="card-text"><?php echo "<a href=koopproduct.php?productid=" . $row['id'] . ">Buy Product</a>"?><i class="fas fa-dollar-sign"></i></p>
         
       </div>
     </div>

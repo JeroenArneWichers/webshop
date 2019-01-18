@@ -23,6 +23,7 @@
     <th scope="col">email customer</th>
     <th scope="col">product id</th>
     <th scope="col">item cost</th>
+    <th scope="col">Remove order</th>
     </tr>
 </thead>
 
@@ -41,6 +42,7 @@
     <td><?php echo $row['email']?></td>
     <td><?php echo $row['productid']?></td>
     <td><?php echo $row['tebetalen']?></td>
+    <td><?php echo "<a href=dbbestellingverwijderen.php?bestellingid=" . $row['id'] . ">Remove item</a>"?></td>
     </tr>
 </tbody>
 </table>
